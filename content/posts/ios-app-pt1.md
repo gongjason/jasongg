@@ -1,8 +1,13 @@
 ---
 title: "Building an iOS app (pt 1)"
-date: 2016-01-22
+date: 2015-01-22
 draft: true
 ---
+
+{{% notice note %}}
+A notice disclaimer
+{{% /notice %}}
+
 
 iOS Development - FitZilla App (Part 1)
 I wrote this when I really didn't know much about apps and tech, decided to not edit for my naive genuine thoughts at the time.

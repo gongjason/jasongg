@@ -1,6 +1,6 @@
 ---
 title: "Building an iOS app (pt 2)"
-date: 2016-01-12
+date: 2015-01-12
 draft: true
 ---
 

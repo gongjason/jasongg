@@ -1,7 +1,7 @@
 baseURL = "https://www.jasongg.com"
 languageCode = "en-us"
 title = "Jason Gong"
-theme = "cactus"
+theme = ["hugo-notice", "cactus"]
 copyright = "Jason Gong"
 
 [[menu.main]]
