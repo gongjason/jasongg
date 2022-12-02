@@ -1,0 +1,15 @@
+{
+    "list": [
+       {
+          "name":"Flock",
+          "url":"https://www.producthunt.com/posts/flock-habit-tracker",
+          "desc":"An email based habit tracker built with AWS Lambda, SendGrid, and Flask. I couldn't figure out how to make money with the 400 users, so I stopped paying the Sendgrid bill. I think a few people still track their workouts with it."
+       },
+       {
+          "name":"Finn",
+          "url":"https://www.producthunt.com/posts/finn-slack-bot",
+          "desc":"A SlackBot for running polls and raffles. Originally made because picking a place for lunch was too difficult. Before a breaking update from Slack there were over 60 Slack teams and hundreds of users that used Finn."
+       }
+    ]
+ }
+ 

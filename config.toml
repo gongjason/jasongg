@@ -37,9 +37,10 @@ weight = 4
 
 [params]
 
-  colortheme = "dark" # dark, light, white, or classic
+  colortheme = "classic" # dark, light, white, or classic
   rss = true # generate rss feed. default value is false
   showAllPostsArchive = false # default
+  css = ["css/custom.css"]
 
   # Home page settings
   description = """
@@ -50,7 +51,7 @@ weight = 4
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
   tagsOverview = true # show tags overview by default.
   showProjectsList = true # show projects list by default (if projects data file exists).
-  projectsUrl = "https://github.com/gohugoio" # title link for projects list
+  projectsUrl = "https://github.com/gongjason" # title link for projects list
 
   # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
   dateFormat = "2006-01-02" # default
