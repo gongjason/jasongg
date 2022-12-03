@@ -44,7 +44,7 @@ weight = 4
 
   # Home page settings
   description = """
-  WIP, please come back later :)
+  A recovering business guy who knows a little about a lot. 
   """
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
