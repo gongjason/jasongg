@@ -9,5 +9,3 @@ This was originally a [post for reddit](https://www.reddit.com/r/sysadmin/commen
 {{< /notice >}}
 
 As a recovering finance guy, I have found few uses for my ability to build spreadsheets without a mouse.
-
-
