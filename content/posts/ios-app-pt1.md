@@ -1,85 +1,145 @@
 ---
 title: "Building an iOS app (pt 1)"
-date: 2015-01-22
-draft: true
+date: 2014-10-22
 ---
 
-{{% notice note %}}
-A notice disclaimer
-{{% /notice %}}
+{{< notice note >}}
+When I graduated University, I didn't have a job. I spent days submitting my resume into the abyss and nights building a mobile app.
 
+As you read this, please imagine a recovering accountant looking for a job in finance.
 
-iOS Development - FitZilla App (Part 1)
-I wrote this when I really didn't know much about apps and tech, decided to not edit for my naive genuine thoughts at the time.
+I didn't edit any of this.
+{{< /notice >}}
 
-Late September of 2014, I subscribed to Treehouse, a service offering tutorials on different programming languages. After I moved through the HTML/CSS/Javascript modules, I started the Swift iOS module on the advice of a good friend. After creating my first weather app, I decided to instead work on a real world problem to try and motivate myself to really try to learn programming. As you read through the reflection, the multitude of arbitrary conclusions driven by the lack of research and validation will seem arrogant and may be hard to stomach for some readers. However, I hope my ability to solve problems and willingness work through the plateaus one experiences when learning something challenging comes through. It wasn't easy for someone who spent 5 years of university memorizing the nuances of financial reporting to grasp all of this. The curiosity to learn and the confidence in my ability to do so started here with this app. As I write this in 2015, if I end up doing something cool in the next 5 years of my life I attribute it to a wonderful course I took in grade 12 and the first app I developed: fitZilla. Enjoy!
+## Why build an iOS app?
 
-The Idea
-As a co-op student working in downtown Toronto, moving every few months was something I got used to. Come the end of every term, I would pack up my room and haul everything from Waterloo to Toronto and back again. Except for losing a few plates, some pens and a 12 year old microwave, the move was relatively painless. But, as I got more into fitness, getting a gym membership started to become a pain. Having had a membership at GoodLife, I had a couple problems:
+In late September of 2014, I moved home from Waterloo. I had nothing to do between job interviews, so I subscribed to Treehouse, a service offering tutorials on different programming languages.
 
-Gym memberships are expensive and long term - most places, like Goodlife, make profits on securing long term contracts with people who would quit a few months in. This way they are able to free up capacity to sell additional memberships. For a poor co-op student, this means a minimum 12 month contract, with a heft initiation fee on sign up. For a 4 to 8 month work term, this would mean a lot of wasted money.
-Commitment to a location is difficult - the particular company I co-oped at required constant travel throughout the city on a weekly basis, so picking a gym to commit to was not realistic. What I needed was flexibility to have a workout wherever I wanted.
-Working out with friends is fun, but hard to do - As with sports, gaming or almost anything else, it's always more fun with friends. However, gyms make it hard to bring in guests. From their perspective, it could crowd the gym during peak hours (creating a less attractive environment for long term members) and also opens up the gym to liabilities from one time incidents. As an example, World Gym offers 5 guest passes a month to premium members (2x the normal membership fee), which can be used during non peak hours. Goodlife, though free in many cases, treats its guests like fresh prey for their commission driven personal trainers. I have personally had horrible experiences with trainers constantly pestering me to sign a membership.
-"sir, how is your workou...ARE YOU READY TO SIGN A MEMBERSHIP YET??"
-"sir, how is your workou...ARE YOU READY TO SIGN A MEMBERSHIP YET??"
+![My workstation](https://user-images.githubusercontent.com/52545545/205390387-d0907832-0d33-4e3b-a6c6-04e7f5c7997e.png "You see, ergonomics had not been invented yet...")
 
-With these issues in mind, I wanted to allow people to sign up for daily memberships for a low price, remove the hassle of wading through annoying sales staff and offer people the flexibility to go to the gym when they wanted to. The idea was to create an app where users could easily purchase day passes to gyms across the city through their phones. Though this was a solution to my own problem, I felt like the service solved a few key problems in the fitness industry (some previously mentioned):
+After I moved through HTML/CSS/Javascript, I started the Swift iOS module on the advice of a good friend. After creating my first weather app, I decided to instead work on a real world problem to try and motivate myself to really try to learn programming.
 
-Memberships are expensive and contract terms are too long
-Commitment is difficult, especially for someone's first visit - in addition to my own issues, a larger issue is the barrier to entry into the fitness space for the average individual. Talking to friends and from my own experience, I can say that joining a gym is scary. For a person that's never done a squat or fumbled with the buttons on a treadmill, walking into a room with muscled men judging your every move is not an easy feat. To add to this, gyms usually have a personal trainer walk a potential member through all the areas of the gym, often making them do a fitness assessment at the end of the visit. Personally I would rather walk in with a friend I knew well and walk through at my own pace.
-Give small box gyms a larger voice - it's no secret that Goodlife and LA Fitness has Toronto locked down in a pseudo monopoly. Smaller box gyms often struggle to remain profitable, most making the switch to scheduled lessons with higher premiums for personalized service in an effort to compete (this is where ClassPass comes in). My app could allow smaller gyms to reach out to a market of short term gym goers and the mass of Torontonians who do not want to commit to a long term membership.
-As a $3B dollar industry in Canada growing at 2.1% a year, expected to grow at over 4% through to 2018 (business person inside talking), I was excited to create a solution people might actually use! I  began to fumble my way through...
+As you read through the reflection, the many arbitrary conclusions driven by the lack of research and validation will seem arrogant and may be hard to stomach for some readers. However, I hope my ability to solve problems and willingness work through something challenging comes through.
 
-Learning Curve
+It wasn't easy for someone who spent 5 years of university memorizing the nuances of financial reporting to grasp all of this. The curiosity to learn and the confidence in my ability to do so started here with this app.
+
+As I write this in 2015, if I end up doing something cool in the next 5 years of my life I attribute it to a wonderful course I took in grade 12 and the first app I developed: fitZilla. 
+
+Enjoy!
+
+## The Idea - Gym Day Passes
+
+As a co-op student working in downtown Toronto, moving every few months was something I got used to. Come the end of every term, I would pack up my room and haul everything from Waterloo to Toronto and back again. 
+
+Except for losing a few plates, some pens and a 12 year old microwave, the move was relatively painless. 
+
+But, as I got more into fitness, getting a gym membership started to become a pain. Having had a membership at GoodLife, I had a couple problems:
+- Gym memberships are expensive and long term - most places, like Goodlife, make profits on securing long term contracts with people who would quit a few months in. This way they are able to free up capacity to sell additional memberships. For a poor co-op student, this means a minimum 12 month contract, with a heft initiation fee on sign up. For a 4 to 8 month work term, this would mean a lot of wasted money.
+- Commitment to a location is difficult - the particular company I co-oped at required constant travel throughout the city on a weekly basis, so picking a gym to commit to was not realistic. What I needed was flexibility to have a workout wherever I wanted.
+- Working out with friends is fun, but hard to do - As with sports, gaming or almost anything else, it's always more fun with friends. However, gyms make it hard to bring in guests. From their perspective, it could crowd the gym during peak hours (creating a less attractive environment for long term members) and also opens up the gym to liabilities from one time incidents. As an example, World Gym offers 5 guest passes a month to premium members (2x the normal membership fee), which can be used during non peak hours. Goodlife, though free in many cases, treats its guests like fresh prey for their commission driven personal trainers. I have personally had horrible experiences with trainers constantly pestering me to sign a membership.
+
+![Dodgeball](https://user-images.githubusercontent.com/52545545/205392496-5209a157-8bdf-4310-9201-9e656a0cdfe5.png "sir, how is your workou...ARE YOU READY TO SIGN A MEMBERSHIP YET??")
+
+With these issues in mind, I wanted to allow people to sign up for daily memberships for a low price. 
+
+Remove the hassle of wading through annoying sales staff and offer people the flexibility to go to the gym when they wanted to. 
+
+The idea was to create an app where users could easily purchase day passes to gyms across the city through their phones.
+
+Though this was a solution to my own problem, I felt like the service solved a few key problems in the fitness industry (some previously mentioned):
+
+## Problem - Memberships are expensive and contract terms are too long
+
+Commitment is difficult, especially for someone's first visit to a gym. 
+
+In addition to my own problem, a larger issue is the barrier to entry into the fitness space for the average individual.
+
+Talking to friends and from my own experience, I can say that joining a gym is scary. For a person that's never done a squat or fumbled with the buttons on a treadmill, walking into a room with muscled men judging your every move is not an easy feat.
+
+To add to this, gyms usually have a personal trainer walk a potential member through all the areas of the gym, often making them do a fitness assessment at the end of the visit.
+
+Personally I would rather walk in with a friend I knew well and walk through at my own pace.
+
+Give small box gyms a larger voice - it's no secret that Goodlife and LA Fitness has Toronto locked down in a pseudo monopoly. Smaller box gyms often struggle to remain profitable, most making the switch to scheduled lessons with higher premiums for personalized service in an effort to compete (this is where ClassPass comes in).
+
+My app could allow smaller gyms to reach out to a market of short term gym goers and the mass of Torontonians who do not want to commit to a long term membership.
+
+As a $3B dollar industry in Canada growing at 2.1% a year, expected to grow at over 4% through to 2018 (business person inside talking), I was excited to create a solution people might actually use! 
+
+I  began to fumble my way through...
+
+## Learning Curve
+
 Before we dive into the specifics of the app, a quick graph to provide context of the struggle I was about to face. Having not programmed anything substantial since Grade 12 (6 years ago), the highs were inflated by false confidence and the lows deepened by the helplessness of a fresh grad without a job.
 
-I will reference this as we progress through this lengthy first entry on the app
+![Image](https://user-images.githubusercontent.com/52545545/205406536-b9fe6b7b-a98e-4012-af0c-345eb5f542f7.png)
+
 I will reference this as we progress through this lengthy first entry on the app
 
-Login Flow and Backend
-[1] Login Screen
-[1] Login Screen
-[2] Main Screen & Search
-[2] Main Screen & Search
-Naturally the first screen the user would see, I first tackled the login screen. My first taste of the "Naively Confident" stage of the learning curve was when I first set up x-code and completed the typical "Hello World", after which I immediately descended to the "Discouragingly Realistic" phase for the rest of the week. To keep myself from rambling I'll use a more organized format to list what I learned as I worked through each module of my app.
+## Feature - Login Flow and Backend
 
-Technical
-Structuring my app through the XIB - I would later come to realize the XIB was difficult to completely rely on when you wanted consistent UI across devices. So instead a mix of XIB and coded layouts, I think I will stick to the latter until the XIB is improved.
-The Backend - After a day exploring the rabbit hole of setting up a server and writing server side code, I discovered Parse (https://www.parse.com). Maybe a lazy solution, but good enough for me. Crucially, it offered a fairly simple user management system, complete with confirmation emails, password recoveries and integration with common social media platforms.
-API Requests and Asyncronous coding - Learning to interface with different APIs like Parse, Cloudinary and Facebook
-Other basic iOS things like collections, buttons, segues, transitions, search bars
-Interesting Takeaways
-APIs are everywhere - Working with a few simple APIs helped me realize how many of my favourite apps interface with APIs and gave me some tools to understand how they work in the background
-Thinking ahead and being creative can save $$ - One big restriction of using a service like Parse, is that once a reasonable scale of users is reached it actually is quite expensive. From a data and computation perspective, certain calls to my Parse backend are more expensive. Understandably, images are especially difficult to retreive in large quantities. A solution I found to this was to use a service called Cloudinary (http://cloudinary.com/), which allowed for unlimited storage and also the ability to compress, store, retrive and resize images through its API.
-Managing asynchronous calls is important for a smooth UX - When displaying the list of gyms, by loading the images in the background, the user is able to scroll and maintain control of the app. No one likes using a laggy app.
-Search Screen
-[3] Search Screen
-[3] Search Screen
-[4] Search Results
-[4] Search Results
-Technical
-Search Bar - The search was the only feature where I was stuck for a prolonged period of time. I can't even remember the hours I typed different iterations of "Geocoding", "Reverse Geocoding", "Swift Geocoding", "Mapkit", "Google Location API" and "I'm confused" into my search-bar. My main problem was how to convert a couple words (often incomplete and misspelled) from a query into a coordinate that could be used to determine what gyms were nearby. This was also the only topic where I had a response given to me on StackOverflow (my first post! https://stackoverflow.com/questions/27252319/mkmapitem-placemark-is-unavailable-in-swift).
-Quick toggle of views - One thing I really enjoyed about Airbnb's app is how smooth you can toggle between the map and the list view on their search results. They make it really easy to browse through the results the way you want, whether thats scrolling around the map and clicking on the location or scrolling down a list and selecting the result there. This was done by inserting a container into the viewcontroller and allowing the button to toggle between the two screens. The data from each screen would persist even if hidden and this saved both API calls and processing time. It was also here I had to go back and create a class for my list view cell, instead of just doing it in the XIB. This part taught me that it made a lot of sense to programmatically do things rather than just drag around elements on XIB in certain cases.
-Interesting Takeaways
-Competing products don't like working together - Ran into multiple issues trying to display data obtained from Google Maps API calls on MapKit objects within my app.
-Payment and Barcodes
-[5] Payment Processing
-[5] Payment Processing
-[6] Barcodes
-[6] Barcodes
-Technical
-Payment processing with Stripe - Another API! This time it's Stripe, which allows you to accept credit cards in your app, website or whatever platform you're working on. Specifically for this screen I used PaymentKit, which is a pre-built form that makes it easy to collect credit card info. They even have the little picture next to the card number change depending on what type of card you entered! Also for this part, Stripe only allows the actual request to move funds to be done server side. Which meant I had to use Cloud Code on Parse, another really cool feature. Probably one of the coolest moments was seeing the $$$ increase on my test page in stripe.
-Validating purchases with barcodes - I was stuck on this problem for the longest time. How does one act as an intermediary, accepting payments on behalf of the merchant from the user. How do I funnel the money and then have the merchant recognize the sale from the user and how to do all of this instantly so that a user can buy a pass and immediately enter the gym...The solution I found was to have both a merchant and user app. The user would make the payment, generating an unique coupon that can be scanned by the merchant. To remove the need to type in the user's information, I stored all of this information in the form of a barcode! Again someone else has amazingly created a module for others to use; thanks to yeahdongcn on GitHub for making such a cool Framework add-on (https://github.com/yeahdongcn/RSBarcodes)! When the user purchases the fitness pass in the app, an entry is created in Parse. Now Parse nicely creates a ObjectId for you when this happens, and what better string to encode in a barcode than that? That way when I scan the barcode, I can immediately go into Parse to retrieve the entry with the ObjectId and read who the user is, what time it was purchased and check off that the pass was redeemed.
-Interesting Take-Aways
-APIs are really useful! - A main takeaway here was how useful API tools are able to allow developers to focus on the problem they are trying to solve. By packaging up the task of accepting and making payments, Stripe (and its family of payment processor friends) is able to facilitate payments on mobile and through the web! Having previously audited banks and financial institutions, I can appreciate that this is not a trivial problem and was glad a scalable solution exists in Stripe.
-Some things I've learned
+{{< notice note >}}
+Unfortunately I lost all the screenshots when my squarespace subscription expired.
+
+Wayback machine does not store images :(
+{{< /notice >}}
+
+[1] Login Screen (screenshot lost)
+
+[2] Main Screen & Search (screenshot lost)
+
+Naturally the first screen the user would see, I first tackled the login screen. 
+
+My first taste of the "Naively Confident" stage of the learning curve was when I first set up x-code and completed the typical "Hello World", after which I immediately descended to the "Discouragingly Realistic" phase for the rest of the week. 
+
+To keep myself from rambling I'll use a more organized format to list what I learned as I worked through each module of my app.
+- Structuring my app through the XIB - I would later come to realize the XIB was difficult to completely rely on when you wanted consistent UI across devices. So instead a mix of XIB and coded layouts, I think I will stick to the latter until the XIB is improved.
+- The Backend - After a day exploring the rabbit hole of setting up a server and writing server side code, I discovered Parse (https://www.parse.com). Maybe a lazy solution, but good enough for me. Crucially, it offered a fairly simple user management system, complete with confirmation emails, password recoveries and integration with common social media platforms.
+- API Requests and Asyncronous coding - Learning to interface with different APIs like Parse, Cloudinary and Facebook
+- Other basic iOS things like collections, buttons, segues, transitions, search bars
+
+Some takeaways I had:
+- APIs are everywhere - Working with a few simple APIs helped me realize how many of my favourite apps interface with APIs and gave me some tools to understand how they work in the background
+- Thinking ahead and being creative can save $$ - One big restriction of using a service like Parse, is that once a reasonable scale of users is reached it actually is quite expensive. From a data and computation perspective, certain calls to my Parse backend are more expensive. Understandably, images are especially difficult to retreive in large quantities. A solution I found to this was to use a service called Cloudinary (http://cloudinary.com/), which allowed for unlimited storage and also the ability to compress, store, retrive and resize images through its API.
+- Managing asynchronous calls is important for a smooth UX - When displaying the list of gyms, by loading the images in the background, the user is able to scroll and maintain control of the app. No one likes using a laggy app.
+
+## Feature - Search Screen
+
+[3] Search Screen (screenshot lost)
+
+[4] Search Results (screenshot lost)
+
+Learnings:
+- Search Bar - The search was the only feature where I was stuck for a prolonged period of time. I can't even remember the hours I typed different iterations of "Geocoding", "Reverse Geocoding", "Swift Geocoding", "Mapkit", "Google Location API" and "I'm confused" into my search-bar. My main problem was how to convert a couple words (often incomplete and misspelled) from a query into a coordinate that could be used to determine what gyms were nearby. This was also the only topic where I had a response given to me on StackOverflow (my first post! https://stackoverflow.com/questions/27252319/mkmapitem-placemark-is-unavailable-in-swift).
+- Quick toggle of views - One thing I really enjoyed about Airbnb's app is how smooth you can toggle between the map and the list view on their search results. They make it really easy to browse through the results the way you want, whether thats scrolling around the map and clicking on the location or scrolling down a list and selecting the result there. This was done by inserting a container into the viewcontroller and allowing the button to toggle between the two screens. The data from each screen would persist even if hidden and this saved both API calls and processing time. It was also here I had to go back and create a class for my list view cell, instead of just doing it in the XIB. This part taught me that it made a lot of sense to programmatically do things rather than just drag around elements on XIB in certain cases.
+
+Takeaways:
+- Competing products don't like working together - Ran into multiple issues trying to display data obtained from Google Maps API calls on MapKit objects within my app.
+
+## Feature - Payment and Barcodes
+
+[5] Payment Processing (screenshot lost)
+
+[6] Barcodes (screenshot lost)
+
+Learnings:
+- Payment processing with Stripe - Another API! This time it's Stripe, which allows you to accept credit cards in your app, website or whatever platform you're working on. Specifically for this screen I used PaymentKit, which is a pre-built form that makes it easy to collect credit card info. They even have the little picture next to the card number change depending on what type of card you entered! Also for this part, Stripe only allows the actual request to move funds to be done server side. Which meant I had to use Cloud Code on Parse, another really cool feature. Probably one of the coolest moments was seeing the $$$ increase on my test page in stripe.
+- Validating purchases with barcodes - I was stuck on this problem for the longest time. How does one act as an intermediary, accepting payments on behalf of the merchant from the user. How do I funnel the money and then have the merchant recognize the sale from the user and how to do all of this instantly so that a user can buy a pass and immediately enter the gym...The solution I found was to have both a merchant and user app. The user would make the payment, generating an unique coupon that can be scanned by the merchant. To remove the need to type in the user's information, I stored all of this information in the form of a barcode! Again someone else has amazingly created a module for others to use; thanks to yeahdongcn on GitHub for making such a cool Framework add-on (https://github.com/yeahdongcn/RSBarcodes)! When the user purchases the fitness pass in the app, an entry is created in Parse. Now Parse nicely creates a ObjectId for you when this happens, and what better string to encode in a barcode than that? That way when I scan the barcode, I can immediately go into Parse to retrieve the entry with the ObjectId and read who the user is, what time it was purchased and check off that the pass was redeemed.
+
+Takeaways:
+- APIs are really useful! - A main takeaway here was how useful API tools are able to allow developers to focus on the problem they are trying to solve. By packaging up the task of accepting and making payments, Stripe (and its family of payment processor friends) is able to facilitate payments on mobile and through the web! Having previously audited banks and financial institutions, I can appreciate that this is not a trivial problem and was glad a scalable solution exists in Stripe.
+
+## Learnings
 In no particular order some of the things I've learned:
+- Coding is hard work, especially when the language (Swift) is quite new and there haven't been years of stack overflow topics made about every conceivable problem.
+- With new languages, there are bugs that still need to be fixed. One common one was unwinding segues
+- UI Design isn't just picking colours that look nice, it is everything relating to the experience of using the app
+- Though XIB Builder seems easy to pick up from the start, most of the time it makes a lot of sense to programmatically create and position the elements on the screen. That way you could use the class more than once and it is much easier to see what you've done.
+- Optionals are really powerful and should be used to minimize your app from crashing
+- API calls are expensive and though it's easy to set up, scaling an app will usually mean an expensive fee
 
-Coding is hard work, especially when the language (Swift) is quite new and there haven't been years of stack overflow topics made about every conceivable problem.
-With new languages, there are bugs that still need to be fixed. One common one was unwinding segues
-UI Design isn't just picking colours that look nice, it is everything relating to the experience of using the app
-Though XIB Builder seems easy to pick up from the start, most of the time it makes a lot of sense to programmatically create and position the elements on the screen. That way you could use the class more than once and it is much easier to see what you've done.
-Optionals are really powerful and should be used to minimize your app from crashing
-API calls are expensive and though it's easy to set up, scaling an app will usually mean an expensive fee
-Next Steps
-Since I got to this step, I've been speaking with countless gym owners around the city to get their input on the idea. As for the app, the next steps are to make the merchant side app, to refine the actual layout of the different screens and to design the UI (part 2)!
+## Next Steps
+
+Since I got to this step, I've been speaking with countless gym owners around the city to get their input on the idea.
+
+As for the app, the next steps are to make the merchant side app, to refine the actual layout of the different screens and to design the UI (part 2)!
