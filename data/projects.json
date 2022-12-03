@@ -3,7 +3,7 @@
       {
          "name":"Firezone (YC W22)",
          "url":"https://github.com/firezone/firezone",
-         "desc":"We're building a faster and simpler way to manage secure access to private resources."
+         "desc":"A faster and simpler way to manage secure access to private resources. Basically a better VPN."
       }, 
       {
           "name":"Flock",

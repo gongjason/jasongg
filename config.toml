@@ -44,7 +44,7 @@ weight = 4
 
   # Home page settings
   description = """
-  A recovering business guy who knows a little about a lot. 
+  Hello! My name is Jason. I'm a recovering finance person who found his way into tech. I write to reflect and share thoughts on topics I find interesting.
   """
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
