@@ -15,9 +15,9 @@ url = "/posts"
 weight = 2
 
 [[menu.main]]
-name = "About"
-url = "/about"
-weight = 4
+name = "Contact"
+url = "https://twitter.com/jasgong"
+weight = 3
 
 [markup]
   [markup.tableOfContents]
@@ -45,6 +45,8 @@ weight = 4
   # Home page settings
   description = """
   Hello! My name is Jason. I'm a recovering finance person who found his way into tech. I write to reflect and share thoughts on topics I find interesting.
+
+  If you enjoyed reading any of this, let me know on [Twitter](https://twitter.com/jasgong)!
   """
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
@@ -62,15 +64,6 @@ weight = 4
 
   [params.comments]
     enabled = false # default
-    # engine = "cactus_comments" # only disqus, utterances, and cactus_comments is supported
-    # [params.comments.utterances]
-    #   repo = "gongjason/jasongg"
-    #   label = "jasongg" # you can use however you want to label your name in your repo's issues
-    #   theme = "github-light"
-    # [params.comments.cactuscomments]
-    #   siteName = "jasongg.com" # see https://cactus.chat/ on how to register your site name
-      #serverUrl = "" # Defaults to https://matrix.cactus.chat:8448 (Cactus Chat public server)
-      #serverName = "" # Defaults to cactus.chat
 
   # match to https://fontawesome.com/icons?d=gallery&s=brands
   [[params.social]]
