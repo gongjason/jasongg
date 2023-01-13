@@ -5,7 +5,7 @@ date: 2022-09-02
 
 As a recovering finance guy, I'm pretty happy when I can build something in a spreadsheet. It's nostalgic.
 
-Since starting [Firezone](https://firezone.dev), I spend most days helping people with their VPN.
+Since starting [Firezone](https://firezone.dev), I spend most days helping people with their corporate VPN.
 
 It wasn't long before someone complained about AWS' pricing.
 

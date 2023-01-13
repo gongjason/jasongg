@@ -37,9 +37,9 @@ weight = 3
 
 [params]
 
-  colortheme = "classic" # dark, light, white, or classic
-  rss = true # generate rss feed. default value is false
-  showAllPostsArchive = false # default
+  colortheme = "dark" # dark, light, white, or classic
+  rss = false # generate rss feed. default value is false
+  showAllPostsArchive = true # default
   css = ["css/custom.css"]
 
   # Home page settings
