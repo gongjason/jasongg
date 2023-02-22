@@ -19,7 +19,7 @@ The post below was was originally shared on [r/sysadmin (on Reddit)](https://www
 
 I attempt to explain how AWS VPN pricing works and what to watch out for.
 
-## Original Post
+# Original Post
 
 Hey everyone!
 
@@ -29,7 +29,7 @@ To help with visualizing the cost, I built a  [cost calculator spreadsheet](http
 
 AWS has a pretty good cost calculator too, but having a few sample scenarios is the main section lacking from their docs.
 
-### A few example scenarios
+## A few example scenarios
 
 *The links go to nice charts in the spreadsheet.*
 
@@ -63,7 +63,7 @@ When the use case expands, so does the cost. Despite how much it costs, I think 
 
 As the team gets larger, the client connection time will likely be the largest factor in cost. The data egress costs will also vary greatly depending on the company. In this example, we assumed 10 GB per user. That’s about 12 Zoom calls - maybe a bit conservative in today’s remote workplace.
 
-### What goes into the cost?
+## What goes into the cost?
 
 *Costs are in $USD*
 
@@ -77,7 +77,7 @@ As the team gets larger, the client connection time will likely be the largest f
 
 **Site-to-site global accelerator premiums ($0.05 per hour + $0.015 to $0.091 per GB)**Released in 2019, this feature improves VPN performance by routing VPN traffic through the AWS network instead of the public internet. This could be helpful when running latency-sensitive applications or workloads.
 
-### Ways to reduce costs
+## Ways to reduce costs
 
 *Let me know if you have other suggestions*
 
