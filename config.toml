@@ -50,7 +50,7 @@ weight = 3
 
   If you enjoyed reading any of this, please let me know on [Twitter](https://twitter.com/jasgong)!
 
-  If you're interested in working together, please reach out(first+lastname+00 at gmail dot com - all one word). I'm always open to new ideas and collaborations!
+  If you're interested in working together, please reach out (jasongong00 at gmail dot com). I'm always open to new ideas and collaborations!
   """
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default

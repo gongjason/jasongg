@@ -3,12 +3,12 @@
       {
          "name":"Firezone (YC W22)",
          "url":"https://github.com/firezone/firezone",
-         "desc":"A faster and simpler way to manage secure access to private resources. Basically a better VPN."
+         "desc":"A faster and simpler way to manage secure access to private resources. Basically a better VPN for teams."
       }, 
       {
          "name":"Finn",
          "url":"https://www.usefinn.com/",
-         "desc":"SlackBot for running polls and random draws. Originally made because choosing where to eat lunch was too difficult at Jefit. There's a few hundred Slack teams using Finn from around the world."
+         "desc":"I made this SlackBot called Finn to help pick where to eat lunch at Jefit. Now, there are hundreds of teams from all over the world using it for running polls and random draws. It's pretty cool how it caught on, but I'm just happy it's making life a little easier for folks. If you're ever stuck on making a decision with your team, give Finn a try!"
       },
       {
           "name":"Flock",
