@@ -6,15 +6,15 @@
          "desc":"A faster and simpler way to manage secure access to private resources. Basically a better VPN."
       }, 
       {
+         "name":"Finn",
+         "url":"https://www.usefinn.com/",
+         "desc":"SlackBot for running polls and random draws. Originally made because choosing where to eat lunch was too difficult at Jefit. There's a few hundred Slack teams using Finn from around the world."
+      },
+      {
           "name":"Flock",
           "url":"https://www.producthunt.com/posts/flock-habit-tracker",
           "desc":"Email based habit tracker built with AWS Lambda, SendGrid, and Flask. I couldn't figure out how to make money with the 400 users, so I stopped paying the Sendgrid bill. I think a few hundred people still track their workouts with it."
-       },
-       {
-          "name":"Finn",
-          "url":"https://www.producthunt.com/posts/finn-slack-bot",
-          "desc":"SlackBot for running polls and random draws. Originally made because choosing where to eat lunch was too difficult. Before a breaking update from Slack there were over 60 Slack teams and hundreds of users around the world."
-       }
+       }       
     ]
  }
  
