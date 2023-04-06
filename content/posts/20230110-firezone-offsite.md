@@ -102,9 +102,3 @@ We could have accomplished some of these over a few long Zoom calls and chat thr
 So, will we have another off-site? Definitely!
 
 Until next time!
-
-:::info 👋 thanks for reading
-Firezone secures remote access to private resources. This post doesn't have much to do about security, networking, or a fancy new feature. But hey, our product improves the remote work experience - organizing a great off-site helps too.
-
-If you want to try it out, our [Docker install script](/docs/deploy) gets Firezone running in just a few minutes.
-:::
