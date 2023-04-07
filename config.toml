@@ -44,13 +44,13 @@ weight = 3
 
   # Home page settings
   description = """
-  Hello! My name is Jason, and I write to reflect on and share my thoughts on topics that I find interesting. 
+  Hello, I'm Jason! I write to reflect and share my thoughts on topics I find interesting. 
 
-  I'm a recovering accountant and finance guy who now works in tech. I've worked at a few startups, including [one that's profitable](https://www.jefit.com/), [one that was acquired](https://www.kite.com/blog/product/kite-is-saying-farewell/), [one that recently IPO'ed](https://www.affirm.com/), and even [one that I founded and left](https://github.com/firezone/firezone). My expertise is in go-to-market strategies and building adoption.
+  I'm a recovering accountant and finance guy in tech. I've worked at a few startups, including [one that's profitable](https://www.jefit.com/), [one that was acquired](https://www.kite.com/blog/product/kite-is-saying-farewell/), [one that recently IPO'ed](https://www.affirm.com/), and even [one that I founded and left](https://github.com/firezone/firezone). My expertise is in go-to-market and building adoption.
 
   If you enjoyed reading any of this, please let me know on [Twitter](https://twitter.com/jasgong)!
 
-  If you're interested in working together, please reach out (jasongong00 at gmail dot com). I'm always open to new ideas and collaborations!
+  If you're interested in working together, please reach out (jasongong00 at gmail dot com).
   """
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
