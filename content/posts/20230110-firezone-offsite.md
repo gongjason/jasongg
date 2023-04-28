@@ -1,5 +1,5 @@
 ---
-title: Lessons from my startup's first off-site
+title: Remote companies need offsites
 description: In December, Firezone organized an off-site in California. Here's what we learned.
 date: 2023-01-10
 ---
