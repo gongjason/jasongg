@@ -1,4 +1,4 @@
-baseURL = "https://www.jasongg.com"
+baseURL = "https://jasongg.com"
 languageCode = "en-us"
 title = "Jason Gong"
 theme = ["hugo-notice", "cactus"]
