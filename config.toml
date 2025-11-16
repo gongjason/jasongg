@@ -19,6 +19,11 @@ name = "Contact"
 url = "https://twitter.com/jasgong"
 weight = 3
 
+[[menu.main]]
+name = "Advisory"
+url = "/posts/advisory/"
+weight = 4
+
 [markup]
   [markup.tableOfContents]
     endLevel = 4
