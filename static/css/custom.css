@@ -1,3 +1,121 @@
 figcaption {
     text-align: center;
   }
+
+.experience-timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2.5rem 0 3rem;
+    padding-left: 1rem;
+  }
+
+.experience-timeline::before {
+    content: "";
+    position: absolute;
+    left: 170px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 2rem;
+    position: relative;
+  }
+
+.timeline-label {
+    text-align: right;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    padding-right: 1.5rem;
+    position: relative;
+  }
+
+.timeline-year {
+    display: inline-block;
+  }
+
+.timeline-node {
+    position: absolute;
+    right: -10px;
+    top: 0.55rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ff8a3d;
+    box-shadow: 0 0 0 4px rgba(255, 138, 61, 0.25);
+  }
+
+.timeline-node::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 14px;
+    width: 2px;
+    height: calc(100% + 2rem);
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(-50%);
+  }
+
+.timeline-item:last-child .timeline-node::after {
+    display: none;
+  }
+
+.timeline-content h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.35rem;
+  }
+
+.timeline-content p {
+    margin: 0;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+.timeline-content a {
+    color: #ffd479;
+    text-decoration: underline;
+  }
+
+.timeline-content a:hover,
+.timeline-content a:focus {
+    color: #ffe9b3;
+  }
+
+@media (max-width: 768px) {
+    .experience-timeline {
+      padding-left: 0;
+    }
+
+    .experience-timeline::before {
+      display: none;
+    }
+
+    .timeline-item {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    .timeline-label {
+      text-align: left;
+      padding-right: 0;
+      padding-left: 1.75rem;
+    }
+
+    .timeline-node {
+      left: 0;
+      right: auto;
+    }
+
+    .timeline-node::after {
+      left: 6px;
+      transform: none;
+    }
+  }
