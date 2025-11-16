@@ -1,8 +1,64 @@
 {{ define "main" }}
   <section id="about">
-  {{ if isset .Site.Params "description" }}
-    {{ .Site.Params.description | $.Page.RenderString }}
-  {{ end }}
+    <div class="experience-timeline" aria-label="Experience timeline">
+      <article class="timeline-item">
+        <div class="timeline-label">
+          <span class="timeline-year">2024 – Present</span>
+          <span class="timeline-node" aria-hidden="true"></span>
+        </div>
+        <div class="timeline-content">
+          <h3>GTM at GrowthX AI</h3>
+          <p>
+            I build growth systems that pair AI agents with domain experts for companies like Webflow, Surge AI,
+            Augment Code, Abnormal AI, Ramp, and Reddit. I lead our largest client engagements and run
+            our own GTM experiments (including the fun projects behind <a href="https://ailedgrowth.com" target="_blank" rel="noopener">ailedgrowth.com</a>).
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-label">
+          <span class="timeline-year">2019 – 2023</span>
+          <span class="timeline-node" aria-hidden="true"></span>
+        </div>
+        <div class="timeline-content">
+          <h3>Founder of Firezone</h3>
+          <p>
+            I founded Firezone, a YC-backed startup taking on legacy remote access products like Cisco AnyConnect and OpenVPN.
+            We challenged incumbents with a modern, developer-friendly approach to secure connectivity.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-label">
+          <span class="timeline-year">2015 – 2021</span>
+          <span class="timeline-node" aria-hidden="true"></span>
+        </div>
+        <div class="timeline-content">
+          <h3>Head of Growth/Product</h3>
+          <p>
+            I led growth and product at several startups—most notably Kite, which used NLP and GPT&nbsp;2.5
+            to pioneer what Cursor, Copilot, and Windsurf offer today. We were early on usage-based,
+            pay-for-tokens pricing and invested heavily in YouTube education.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-label">
+          <span class="timeline-year">2011 – 2014</span>
+          <span class="timeline-node" aria-hidden="true"></span>
+        </div>
+        <div class="timeline-content">
+          <h3>Past Life in Finance</h3>
+          <p>
+            I worked on acquisition deals for Canada’s largest industrial automation company, engineering manufacturing
+            lines for GM, Ford, Tesla, First Solar, Merck, and Dyson before making the jump into tech.
+          </p>
+        </div>
+      </article>
+    </div>
   {{ if isset .Site.Params "social" }}
       <p>Find me on
       {{ $length := (len .Site.Params.social) }}
